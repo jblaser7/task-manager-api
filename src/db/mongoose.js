@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://dbUser:dbUser@cluster0.6r3gb.mongodb.net/auth',{
+mongoose.connect(process.env.MONGO_CONNECT,{
   useNewUrlParser:true,
   //useCreateIndex:true
 });
